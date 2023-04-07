@@ -1,0 +1,136 @@
+.contact {
+  height: 82vh;
+  width: 90vw;
+  display: flex;
+  padding: 5%;
+  padding-top: 1%;
+  flex-direction: column;
+}
+.back{
+    height: 92.5vh;
+    width: 100vw;
+    background-image: url("back.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+@media (max-width: 768px) {
+  .contact {
+    display: flex;
+    width: 90vw;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+}
+.contact > h1 {
+  color: rgb(243, 96, 206);
+  margin-bottom: 0%;
+  margin-top: 2%;
+  font-size: 6vh;
+  font-weight: 550;
+  text-transform: none;
+  font-family: "Cardo", serif;
+  transform: scale(1.1);
+  animation: scale 1.5s forwards cubic-bezier(0.5, 1, 0.89, 1);
+}
+@keyframes scale {
+  100% {
+    transform: scale(1);
+  }
+}
+
+span {
+  display: inline-block;
+  opacity: 0;
+  filter: blur(4px);
+}
+
+span:nth-child(1) {
+  animation: fade-in 0.6s 0.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(2) {
+  animation: fade-in 0.6s 0.2s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+@keyframes fade-in {
+  100% {
+    opacity: 1;
+    filter: blur(0);
+  }
+}
+.form {
+  color: white;
+  justify-content: center;
+  align-items: center;
+  height: 30vh;
+  padding: 2%;
+  font-size: 3vh;
+  width: 30vw;
+  font-family: "Montserrat";
+}
+@media (max-width: 768px) {
+  .form {
+    width: 70vw;
+  }
+}
+#form-input-control-email {
+  height: 3vh;
+  font-size: 2vh;
+  width: 100%;
+  margin-bottom: 5%;
+}
+#form-input-control-last-name {
+  height: 3vh;
+  font-size: 2vh;
+  width: 100%;
+  margin-bottom: 5%;
+}
+#form-textarea-control-opinion {
+  align-self: baseline;
+  font-size: 2vh;
+  height: 12vh;
+  width: 100%;
+  margin-bottom: 5%;
+}
+.km2 {
+  font-size: 2vh;
+  width: 30%;
+  padding: 0.3em;
+  margin-top: 3%;
+  padding-left: 0.4em;
+  padding-right: 0.4em;
+  font-family: "Montserrat";
+  font-weight: 700;
+  background-color: rgb(42, 41, 41);
+  color: white;
+  transition: 0.3s;
+  cursor: pointer;
+  border-color: rgb(196, 194, 194);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.km2:hover {
+  background-color: rgb(245, 241, 241);
+  color: rgb(78, 77, 77);
+  border-color: rgb(104, 103, 103);
+  width: 25%;
+}
+.wrap{
+    display: flex;
+    width: 100%;
+}
+
+
+.swal2-success::after {
+  content: "✔";
+  color: #06b320; /* Set the desired color */
+}
+.swal2-success-linelong::after {
+  /* content: '✔'; Set the tick symbol */
+  color: #06b320; /* Set the desired color */
+}
+.swal2-error::after {
+  content: "×"; /* Set the tick symbol */
+  color: #cf1919; /* Set the desired color */
+}

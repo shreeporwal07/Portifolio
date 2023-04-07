@@ -1,0 +1,144 @@
+.post {
+	font-family: sans-serif;
+	background: url("https://getwallpapers.com/wallpaper/full/c/0/a/625787.jpg");
+	height: 100vh;
+	overflow: hidden;
+    height: 85vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+}
+.post>h1 {
+	font-weight: normal;
+	text-decoration: none;
+	font-family: "Cardo", cursive;
+	font-size: 6vh;
+	width: 100vw;
+	text-align: center;
+	position: relative;
+	color: white;
+}
+
+#button-container {
+    text-align: center;
+    position: relative;
+    margin-top: 10%;
+	height: fit-content;
+	width: fit-content;
+    align-items: center;
+    justify-content: center;
+    width: 90vw;
+    margin-left: 2%;
+    margin-top: 2%;
+}
+
+#button-container>button {
+    text-align: center;
+	font-size: 3vh;
+	background-color: rgb(22, 22, 22);
+	color: white;
+	border: 0.1rem solid white;
+	border-radius: 1rem;
+	padding: 1%;
+	box-shadow: 0px 0px 0.5rem 0.2rm rgb(197, 197, 197);
+	animation: expanding-animation 4s infinite;
+    position: relative;
+}
+
+@keyframes expanding-animation {
+	0% {
+		box-shadow: 0px 0px 0.2rem 0.1rem rgb(197, 197, 197);
+	}
+	50% {
+		box-shadow: 0px 0px 0.5rem 0.2rem rgb(197, 197, 197);
+	}
+	100% {
+		box-shadow: 0px 0px 0.2rem 0.1rem rgb(197, 197, 197);
+	}
+}
+
+#button-container:hover #menu {
+	opacity: 1;
+	transform: translateY(0px);
+}
+
+#button-container:hover #mainbtn {
+	background-color: white;
+	color: rgb(22, 22, 22);
+}
+
+#menu {
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    width: 85vw;
+	transition: 500ms;
+	opacity: 0;
+	transform: translateY(-10%);
+	margin-top: 2%;
+	color: white;
+	background-color: rgb(22, 22, 22);
+	padding: 1%;
+	border: 0.1rem solid white;
+	border-radius: 1rem;
+	box-shadow: 0px 0px 0.2rem 0.1rem rgb(197, 197, 197);
+}
+
+#menu button {
+	margin: 1%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    margin-left: 3%;
+    margin-right: 2%;
+    padding: 3%;
+    font-size: 3vh;
+    background-color: rgb(79, 78, 78);
+    color: white;
+    box-shadow: 0px 0px 0.2rem 0.1rem rgb(245, 241, 241);
+}
+
+.btn {
+	transition: 500ms;
+}
+
+#btn1:hover {
+	scale: 1.5;
+	background-image: url("cs.jpeg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	content: none;
+    color: transparent;
+}
+
+#btn2:hover {
+	scale: 1.5;
+	background-image: url("mav.jpeg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	content: none;
+    color: transparent;
+}
+
+#btn3:hover {
+	scale: 1.5;
+	background-image: url("matrix.jpeg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	content: none;
+    color: transparent;
+}
+#btn4:hover {
+	scale: 1.5;
+	background-image: url("ed.jpeg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	content: none;
+    color: transparent;
+}
