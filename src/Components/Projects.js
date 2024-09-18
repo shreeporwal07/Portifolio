@@ -1,17 +1,17 @@
 import React from "react";
 import "./Projects.css";
-import amazon from './img/amazon.jpeg';
+import fv from './img/fv.png';
 import netflix from './img/netflix.jpg'
-import intro from './img/myintro.jpeg';
-import res from './img/resume.jpeg';
+import sskti from './img/sskti.png';
+import rogr from './img/rogr.png';
 function Projects() {
   const prodata = [
-    { name: "Amazon", des: "A React based multiple pages project with basic HTML and advanced CSS, using react and materials UI created form to login users and can register new users.", imge: amazon ,link:"https://github.com/shreeporwal07/Amazon" },
-    { name: "Netflix", des: "A basic React based single page project, used basic React and CSS to create the single page displayed, and to test my knowledge on embedding transitions", imge: netflix,link:"https://github.com/shreeporwal07/Netflix" },
+    { name: "FinVue", des: "A finance learning app featuring real-time charts, a dummy stock market game, and comprehensive financial management tools.", imge: fv ,link:"https://finvue-umber.vercel.app/" },
+    { name: "StreeShakti", des: "A women empowerment app with real-time location sharing, fitness and period trackers, and emergency call features.", imge: sskti,link:"https://stree-shakti.vercel.app/" },
   ];
   const prodata2 = [
-    { name: "My Intro", des: "Build this project to check my hold on HTML and CSS, using this project I learned to add photos and some designing to my web page.", imge: intro,link:"https://github.com/shreeporwal07/My-Intro" },
-    { name: "Resume", des: "Beginner HTML and CSS project which I build as a practice project", imge: res,link:"https://github.com/shreeporwal07/Resume" },
+    { name: "RogRaksha", des: "A healthcare companion app with appointment scheduling, emergency services, and medication reminders.", imge: rogr,link:"https://rog-raksha.vercel.app/" },
+    { name: "Netflix", des: "A basic React based single page project, used basic React and CSS to create the single page displayed, and to test my knowledge on embedding transitions", imge: netflix,link:"https://github.com/shreeporwal07/Netflix" },
   ];
   return (
     <div className="projects">
@@ -36,7 +36,7 @@ function Projects() {
                 <div className="info">
                     <h1>{data.name}</h1>
                   <p>{data.des}</p>
-                  <button className="km"><a href={data.link} target="new">View Project</a></button>
+                  <button style={{borderRadius:"0.5rem"}}><a href={data.link} target="new">View Project</a></button>
                 </div>
               </div>
           ))}
@@ -48,7 +48,7 @@ function Projects() {
                 <div className="info">
                     <h1>{data.name}</h1>
                   <p>{data.des}</p>
-                  <button className="km"><a href={data.link} target="new">View Project</a></button>
+                  <button style={{borderRadius:"0.5rem"}}><a href={data.link} target="new">View Project</a></button>
                 </div>
               </div>
           ))}

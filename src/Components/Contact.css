@@ -108,6 +108,7 @@ span:nth-child(2) {
   display: flex;
   flex-direction: row;
   align-items: center;
+  border-radius: 0.5rem;
   justify-content: center;
 }
 .km2:hover {
